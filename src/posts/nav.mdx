@@ -52,10 +52,32 @@ The first and foremost step to build accessible components is to start using <a 
           <a href="/contact" class="menu_link">Contact</a>
         </li>
       </ul>
-    </nav>
+</nav>
 
 ```
 
 The thing to note here is since all the anchor tags are focusable, the basic HTML skeleton of the navigation bar guven above in itself is accessible. Something similar to this.
 
-![Image](abc.png)
+<img src="https://github.com/tanisha03/a11y-friendly/blob/master/src/posts/abc.png?raw=true" />
+
+However, we obviously won't like seeing something like this so let us just style it up.
+
+```
+.submenu {
+  position: absolute;
+  padding: 0;
+  list-style: none;
+  height: 0.5em;
+  width: 0.5em;
+  overflow: hidden;
+  clip: rect(0.5em 0.5em 0.5em 0.5em);
+  clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
+}
+.menu_item:hover .submenu {
+  padding: 0.5em 0;
+  width: 9em;
+  height: auto;
+  background: #111;
+  clip: auto;
+}
+```
