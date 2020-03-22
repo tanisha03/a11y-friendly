@@ -1,0 +1,61 @@
+---
+title: Dropdown Navigation
+---
+
+# Accessible Dropdown Navigation
+
+What are dropdown navigations? They look something similar to a box of options hanging down from the Navigation Bar. Something similar to the illustration given below.
+
+The first and foremost step to build accessible components is to start using <a href="#">Semantic HTML</a>. So let us break down each of the components of the navigation.
+
+<ul>
+  <li>
+    The first step to start building the navigation is use the semantic nav HTML
+    tag
+  </li>
+  <li>
+    Navigation schema is composed of a list of links and should be provided as
+    nested lists of links
+  </li>
+  <li>
+    Attach aria attributes to the navigation for the assisstive information when
+    using screen readers
+  </li>
+</ul>
+
+```
+<nav role="menu">
+      <ul class="menu">
+        <li class="menu_item">
+          <a href="/about" class="menu_link">About</a>
+          <ul class="submenu">
+            <li class="submenu_item">
+              <a class="submenu__link" href="/about/journey">Journey</a>
+            </li>
+            <li class="submenu_item">
+              <a class="submenu__link" href="/about/team">Team</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <a href="/updates" class="menu_link">Updates</a>
+          <ul class="submenu">
+            <li class="submenu_item">
+              <a class="submenu__link" href="/updates/blog">Blog</a>
+            </li>
+            <li class="submenu_item">
+              <a class="submenu__link" href="/updates/press">Press</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_item">
+          <a href="/contact" class="menu_link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+```
+
+The thing to note here is since all the anchor tags are focusable, the basic HTML skeleton of the navigation bar guven above in itself is accessible. Something similar to this.
+
+![Image](abc.png)

@@ -20,7 +20,13 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
-    `gatsby-transformer-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -38,8 +44,15 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         defaultLayouts: {
+          posts: require.resolve("./src/components/layout.js"),
           default: require.resolve("./src/components/layout.js")
         }
+      }
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/posts`
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
