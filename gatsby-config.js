@@ -43,6 +43,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: [".mdx", ".md"],
         defaultLayouts: {
           posts: require.resolve("./src/components/layout.js"),
           default: require.resolve("./src/components/layout.js")
@@ -59,13 +60,29 @@ module.exports = {
         ]
       }
     },
-    // `gatsby-plugin-mdx-prismjs`,
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [`gatsby-remark-prismjs`]
-    //   }
-    // },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false
+              },
+              escapeEntities: {}
+            }
+          }
+        ]
+      }
+    },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
