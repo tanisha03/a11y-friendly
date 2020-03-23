@@ -82,7 +82,7 @@ Something similar to this.
 <img src="https://github.com/tanisha03/a11y-friendly/blob/master/src/posts/abc.png?raw=true" />
 
 However, we obviously won't like seeing something like this so let us just style
-it up.
+it up. For the submenu, I have used visually-hidden rather than display:none. I have omitted some general styling, you can have a look at the entire code <a href="#">here</a>.
 
 ```css
 .submenu {
@@ -92,7 +92,7 @@ it up.
   height: 0.5em;
   width: 0.5em;
   overflow: hidden;
-  clip: rect(0.5em 0.5em 0.5em 0.5em);
+  clip: rect(0.5em 0.5em 0.5em 0.5em); //visually-hidden
   clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
 }
 .menu_item:hover .submenu {
@@ -103,3 +103,77 @@ it up.
   clip: auto;
 }
 ```
+
+The navigation bar looks something like this now. However, the next thing to notice here, you cant really visually focus on the submenu options using the Tab key.
+
+<img src="#" />
+
+To solve this issue, we have :focus-within to the rescue. It is a pseudo class which which represents an element that has received focus or contains an element which has received focus. This allows us to open the submenu when a submenu element is focused.
+
+```css
+.menu_item:hover .submenu {
+  padding: 0.5em 0;
+  width: 9em;
+  height: auto;
+  background: #111;
+  clip: auto;
+}
+```
+
+It works pretty well for the menus to be able to navigation forward and backward using Tab key and Shift+Tab respectively.
+
+<img src="#" />
+
+To further make it even more functional, let us write some code to be able to switch menus using the left and right arrow key. To get started let us add add an EventListener for the same.
+
+```javascript
+document.addEventListener("keydown", function(e) {
+  l = document.activeElement.parentElement;
+  // handling for change of menu when right arrow key is clicked
+  if (e.keyCode === 39) {
+  }
+
+  // handling for change of menu when right arrow key is clicked
+  if (e.keyCode === 37) {
+  }
+});
+```
+
+Here "activeElement" gives us the the currently focused element which in this case will always be the anchor tags hence we refer to the parent element (`<li>`) of the same.
+
+To move to the next menu i.e. when right arrow key is clicked we simply focus on the firstElementChild of the next sibling menu. The catch here is that since anchor tags are focusable and not `<li>`, we need to retrive `<a>` using the firstElement. Another thing to take care of is the fact that if the submenu item is currently focused, we need to retrive the parent menu to be able to move to the next(immediate right menu). To further clarify, have a look at the code below.
+
+```javascript
+// handling for change of menu when right arrow key is clicked
+if (e.keyCode === 39) {
+  if (l.classList.contains("submenu_item")) {
+    //retrive the parent menu_item
+    l = l.parentElement.parentElement;
+  }
+  if (l.nextElementSibling !== null) {
+    //focus on the <a> of the previous menu_item
+    r = l.nextElementSibling;
+    r.firstElementChild.focus();
+  }
+}
+```
+
+Now that we've managed to move to the next menu_item, moving left should not be that hard.
+
+```javascript
+if (e.keyCode === 37) {
+  if (l.classList.contains("submenu_item")) {
+    //retrive the parent menu_item
+    l = l.parentElement.parentElement;
+  }
+  if (l.previousElementSibling !== null) {
+    r = l.previousElementSibling;
+    //focus on the <a> of the previous menu_item
+    r.firstElementChild.focus();
+  }
+}
+```
+
+Congratulations !!! You've your accessible navigation menu ready. Refer to the entire code <a href=#>here</a>
+
+<img src="#" />
