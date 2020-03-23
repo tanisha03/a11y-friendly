@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"allMdx":{"nodes":[{"frontmatter":{"title":"Hello"}},{"frontmatter":{"title":"Hello there"}},{"frontmatter":{"title":"Dropdown Navigation"}}]}},"pageContext":{}}}
+{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"allMdx":{"nodes":[{"frontmatter":{"title":"Hello there"}},{"frontmatter":{"title":"Hello"}},{"frontmatter":{"title":"Dropdown Navigation"}}]}},"pageContext":{}}}

@@ -46,9 +46,26 @@ module.exports = {
         defaultLayouts: {
           posts: require.resolve("./src/components/layout.js"),
           default: require.resolve("./src/components/layout.js")
-        }
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {}
+            }
+          }
+        ]
       }
     },
+    // `gatsby-plugin-mdx-prismjs`,
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [`gatsby-remark-prismjs`]
+    //   }
+    // },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
