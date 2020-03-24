@@ -1,0 +1,29 @@
+.main-menu {
+  padding: 3em 2em;
+  border-bottom: 0.1em solid #000;
+  margin: 0 0 2em;
+}
+.main-menu h1 {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  float: left;
+}
+ul {
+  list-style: none;
+  float: right;
+}
+.menu li {
+  display: block;
+  float: left;
+  padding: 0 1.5em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+/* .menu a { */
+/* text-decoration: none; */
+/* color: black; */
+/* } */

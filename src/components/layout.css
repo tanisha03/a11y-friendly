@@ -7,6 +7,9 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3e9ea;
+  padding: 0 10em;
+  font-size: 1.2em;
 }
 article,
 aside,
@@ -41,11 +44,14 @@ template {
 }
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  color: black;
+  text-decoration: underline;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  /* text-decoration: none; */
+  /* text-underline-position: under; */
 }
 abbr[title] {
   border-bottom: none;
@@ -615,8 +621,11 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   html {
     font-size: 100%;
+  }
+  body {
+    padding: 0 1em;
   }
 }
