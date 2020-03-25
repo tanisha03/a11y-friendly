@@ -1,0 +1,79 @@
+---
+title: forms
+---
+
+# Accessible forms
+
+Regardless to say, forms are one of the vital source of information collected from the users. It is the connection point between the users and any website. To be able to utilise it to the best, it is imperative to not leave any loose ends and make forms accessible.
+
+Various fields are by default accessible and tabable however there are other points which are often ignored by developers while making these forms accessible. Let us have a look at them below:
+
+## Use Semantics
+
+The No.1 RULE of accessibility is the use of semantic HTML. Hence, use the tags that are best suited for the component. `<form>` , `<input>`, `<fielset>` and `<button>` are few of them.
+
+## Form Inputs and Label
+
+Realizing the difference between placeholders and labels is the first step to building accessible forms. Placeholders are meant foe giving an example of the field where as Labels identify the information required to be entered into the field.
+Placeholders are not accessible because of the following reasons:
+
+1. It often has low color-contrat ratio.
+2. It dissapears when the user starts typing.
+3. It is not accessible to the screen reader.
+
+Hence, omitting labels is a big NO. Matching for and id values associate label with the appropriate form control. Another very important benefit of labels is that clicking on the label, automatically sets the focus on the field and this is really helpful for people with motor disabilities.
+
+```HTML
+ <label for="full-name">
+    Full Name
+    <span class="required"> (required) </span><br>
+    <input id="full-name" name="full-name" required="" type="text" />
+</label>
+```
+
+The same also applies for Textareas. Labels should always be included for text areas.
+
+## Field sets and Legends
+
+Similar fields can be grouped together using fieldsets like Title, First and Last Name. Fieldset also includes a legend tag where information about the group can be displayed as a caption. These captions are read out by the screen readers to let the user give extra information.
+
+```HTML
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="full-name">
+      Full Name
+      <span class="required"> (required) </span><br />
+      <input id="full-name" name="full-name" required="" type="text" />
+    </label>
+
+    <label for="email">
+      Email
+      <span class="required"> (required) </span><br />
+      <input id="email" name="email" required="" type="email" />
+    </label>
+</fieldset>
+```
+
+## Option Groups
+
+The optgroup element groups options in a select box. It requires a label attribute, the value of which is displayed as a non-selectable pseudo-heading preceding that group in the drop-down list of visual browsers.
+
+```HTML
+<select name="country">
+    <optgroup label="Africa">
+        <option value="gam">Gambia</option>
+        <option value="mad">Madagascar</option>
+        <option value="nam">Namibia</option>
+    </optgroup>
+    <optgroup label="Europe">
+        <option value="fra">France</option>
+        <option value="rus">Russia</option>
+        <option value="uk">UK</option>
+    </optgroup>
+    <optgroup label="North America">
+        <option value="can">Canada</option>
+        <option value="mex">Mexico</option>
+        <option value="usa">USA</option>
+    </optgroup>
+</select>
+```

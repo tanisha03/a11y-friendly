@@ -2,14 +2,21 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: #7c3028;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f3e9ea;
+  background-color: #fdf6e3;
+  /* padding: 0 10em; */
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #7c3028;
+  line-height: 1.5em;
+}
+.main-area {
   padding: 0 10em;
-  font-size: 1.2em;
 }
 article,
 aside,
@@ -44,13 +51,16 @@ template {
 }
 a {
   background-color: transparent;
-  color: black;
-  text-decoration: underline;
+  color: #7c3028;
+  /* text-decoration: underline; */
+  /* text-underline-position: below; */
 }
-a:active,
+/* a:active, */
 a:hover {
   outline-width: 0;
-  /* text-decoration: none; */
+  text-decoration: none;
+  /* -webkit-text-underline-position: under; */
+  /* -ms-text-underline-position: under; */
   /* text-underline-position: under; */
 }
 abbr[title] {
@@ -69,6 +79,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: #7c3028;
 }
 mark {
   background-color: #ff0;
@@ -625,7 +636,7 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-  body {
+  .main-area {
     padding: 0 1em;
   }
 }

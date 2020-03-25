@@ -1,0 +1,15 @@
+<svg width="123" height="126" viewBox="0 0 123 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 114C44.7654 101.926 67.037 85.0225 86 114" stroke="black" stroke-width="2"/>
+<path d="M41 20C41 8.95431 49.9543 0 61 0V0C72.0457 0 81 8.95431 81 20V20C81 31.0457 72.0457 40 61 40V40C49.9543 40 41 31.0457 41 20V20Z" fill="#7C3028"/>
+<path d="M61.5 97.5V39.5" stroke="black" stroke-width="2"/>
+<path d="M11 52C27.5 66.3378 70.6 86.4108 111 52" stroke="black" stroke-width="2"/>
+<rect x="4" y="43" width="15" height="15" rx="7" fill="#7C3028"/>
+<rect x="24" y="107" width="15" height="15" rx="7" fill="#7C3028"/>
+<rect x="104" y="42" width="15" height="15" rx="7" fill="#7C3028"/>
+<rect x="83" y="107" width="15" height="15" rx="7" fill="#7C3028"/>
+<path d="M8.5 37.5C10.8333 32 19.5 19 35.5 11" stroke="black" stroke-width="2"/>
+<path d="M84.5 10.5C91.1667 13.1667 106.2 22 113 36" stroke="black" stroke-width="2"/>
+<path d="M121 64C121.167 73.5 117.5 95.7 101.5 108.5" stroke="black" stroke-width="2"/>
+<path d="M1.5 64C1.16666 73 4.3 94.3 19.5 107.5" stroke="black" stroke-width="2"/>
+<path d="M42.5 122C49.6667 123.667 67.1 126 79.5 122" stroke="black" stroke-width="2"/>
+</svg>
