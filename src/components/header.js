@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
           borderBottom: "none"
         }}
       >
-        <img src={img1} />
+        <img src={img1} alt="logo" />
         {/* <span className="site-title"> {siteTitle} </span> */}
       </Link>
     </h1>

@@ -2,7 +2,8 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #7c3028;
+  min-height: 100%;
+  position: relative;
 }
 body {
   margin: 0;
@@ -14,6 +15,7 @@ body {
   font-weight: 500;
   color: #7c3028;
   line-height: 1.5em;
+  height: 100%;
 }
 .main-area {
   padding: 0 10em;

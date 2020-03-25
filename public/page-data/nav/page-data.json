@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-posts-nav-mdx","path":"/nav/","result":{"pageContext":{"frontmatter":{"title":"Dropdown Navigation"}}}}
+{"componentChunkName":"component---src-posts-nav-mdx","path":"/nav/","result":{"pageContext":{"frontmatter":{"title":"Accessible Dropdown Navigation","path":"/nav","date":"22-3-2020","tags":["accessibility","navigation","javascript","css","front end","a11y"],"description":"Building accessible hover dropdown navigations using CSS and Javascript to make it super accessible."}}}}
