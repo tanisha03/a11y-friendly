@@ -23,7 +23,7 @@ ul {
 }
 .menu li {
   display: block;
-  padding: 0 1em 0;
+  padding: 0 0.8em 0;
   font-size: 1.2em;
   font-weight: 400;
 }

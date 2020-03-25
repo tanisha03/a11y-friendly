@@ -23,10 +23,10 @@ const Header = ({ siteTitle }) => (
     <nav className="main-menu">
       <ul className="menu">
         <li className="menu-item">
-          <Link to="/about">About</Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li className="menu-item">
-          <Link to="/blog">Blog</Link>
+          <Link to="/about">About</Link>
         </li>
         <li className="menu-item">
           <Link to="/contact">Contact</Link>
