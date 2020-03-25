@@ -5,7 +5,7 @@ const Post = ({ title, path, date, description }) => (
   <>
     <a
       href={path}
-      style={{ fontSize: "1.5em", margin: 0, padding: 0, fontWeight: 600 }}
+      style={{ fontSize: "1.4em", margin: 0, padding: 0, fontWeight: 600 }}
     >
       {title}
     </a>

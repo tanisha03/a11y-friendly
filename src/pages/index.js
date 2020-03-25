@@ -25,7 +25,6 @@ const IndexPage = () => {
       }
     `
   );
-  console.log(posts);
   return (
     <Layout>
       <SEO title="Home" />
