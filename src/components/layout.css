@@ -49,7 +49,8 @@ a {
   padding-bottom: 0.05em;
   border-bottom: 0.15em solid #7c3028;
 }
-/* a:active, */
+a:active,
+a:focus,
 a:hover {
   outline-width: 0;
   text-decoration: none;
