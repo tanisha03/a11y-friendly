@@ -6,20 +6,18 @@ import img1 from "./abc.svg";
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1 className="logo">
-      <Link
-        to="/"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          textDecoration: "none",
-          borderBottom: "none"
-        }}
-      >
-        <img src={img1} alt="logo" />
-        {/* <span className="site-title"> {siteTitle} </span> */}
-      </Link>
-    </h1>
+    <Link
+      to="/"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        textDecoration: "none",
+        borderBottom: "none"
+      }}
+    >
+      <img src={img1} alt="logo" className="logo" />
+      {/* <span className="site-title"> {siteTitle} </span> */}
+    </Link>
     <nav className="main-menu">
       <ul className="menu">
         <li className="menu-item">

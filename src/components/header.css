@@ -1,35 +1,42 @@
+header {
+  width: 100%;
+}
+.logo {
+  padding: 0.2em 0 0;
+}
 .main-menu {
   padding: 0;
+  width: 100%;
   border-bottom: 0.2em solid #7c3028;
   margin: 0 0 2em;
   color: #7c3028;
 }
-.main-menu h1 {
-  font-size: 2em;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-  color: #7c3028;
-}
-.logo {
-  padding: 0.2em 0 0;
-  /* float: left; */
-}
+/* .main-menu h1 { */
+/* font-size: 2em; */
+/* font-weight: 500; */
+/* padding: 0; */
+/* margin: 0; */
+/* color: #7c3028; */
+/* } */
+
 ul {
-  /* margin: 2em 0 0; */
   list-style: none;
   justify-content: center;
   display: flex;
 }
 .menu li {
   display: block;
-  padding: 0 0.8em 0;
+  padding: 0 1em 0;
   font-size: 1.2em;
   font-weight: 400;
 }
 .menu a {
   text-decoration: none;
-  /* color: black; */
   color: #7c3028;
   font-weight: 600;
+}
+@media only screen and (max-width: 1200px) {
+  .menu li {
+    padding: 0 0.8em 0;
+  }
 }
