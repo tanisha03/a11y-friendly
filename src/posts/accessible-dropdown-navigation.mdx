@@ -69,6 +69,7 @@ HTML skeleton of the navigation bar guven above in itself is accessible.
 Something similar to this.
 
 <img
+  class="blog-image"
   src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-1.gif?token=AI5VVFN3CWVQIDXCW7TKL5K6QOR2G"
   style="text-align:center"
 />
@@ -98,7 +99,10 @@ it up. For the submenu, I have used visually-hidden rather than display:none. I 
 
 The navigation bar looks something like this now. However, the next thing to notice here, you cant really visually focus on the submenu options using the Tab key.
 
-<img src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-2.gif?token=AI5VVFL7VFMTUGXJZ2OCXF26QOR32" />
+<img
+  class="blog-image"
+  src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-2.gif?token=AI5VVFL7VFMTUGXJZ2OCXF26QOR32"
+/>
 
 To solve this issue, we have :focus-within to the rescue. It is a pseudo class which which represents an element that has received focus or contains an element which has received focus. This allows us to open the submenu when a submenu element is focused.
 
@@ -114,7 +118,10 @@ To solve this issue, we have :focus-within to the rescue. It is a pseudo class w
 
 It works pretty well for the menus to be able to navigation forward and backward using Tab key and Shift+Tab respectively.
 
-<img src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-3.gif?token=AI5VVFMLRWF66T2EHGBHPBS6QOR5K" />
+<img
+  class="blog-image"
+  src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-3.gif?token=AI5VVFMLRWF66T2EHGBHPBS6QOR5K"
+/>
 
 To further make it even more functional, let us write some code to be able to switch menus using the left and right arrow key. To get started let us add add an EventListener for the same.
 
@@ -168,4 +175,9 @@ if (e.keyCode === 37) {
 
 Congratulations !!! You've your accessible navigation menu ready. Refer to the entire code here.
 
-<img src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-4.gif?token=AI5VVFIEGQCBOXCYQWNTFQK6QOR62" />
+<img
+  class="blog-image"
+  src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-4.gif?token=AI5VVFIEGQCBOXCYQWNTFQK6QOR62"
+/>
+
+That is how a few lines of code can make your product reach out to a larger audience. Hence, always practice A11Y.

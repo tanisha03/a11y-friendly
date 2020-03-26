@@ -2,13 +2,13 @@ html {
   position: relative;
   font-family: sans-serif;
   height: 100%;
-  min-width: 100vw;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   background-color: black;
 }
 body {
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
   right: 0;
@@ -22,11 +22,12 @@ body {
   line-height: 1.5em;
   min-height: 100%;
   min-width: 100%;
-  box-sizing: border-box;
 }
 .main-area {
-  padding: 0 10em;
+  padding: 0 10em 5em;
+  /* margin-bottom: 10%; */
 }
+
 article,
 aside,
 details,
@@ -53,13 +54,15 @@ a:hover {
 footer {
   text-align: center;
   width: 100%;
-  color: #fff;
+  color: #fdf6e3;
   background-color: #7c3028;
-  padding: 0;
-  margin: 0;
+  padding: 0.5em 0;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.blog-image {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -67,6 +70,9 @@ footer {
     font-size: 100%;
   }
   .main-area {
-    padding: 0 2em;
+    padding: 0 2em 4em;
   }
+  /* .blog-image { */
+  /* width: 100%; */
+  /* } */
 }

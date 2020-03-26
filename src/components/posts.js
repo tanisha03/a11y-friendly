@@ -10,7 +10,7 @@ const Post = ({ title, path, date, description }) => (
       {title}
     </a>
     <p style={{ marginLeft: "2%", fontWeight: 600 }}>{date}</p>
-    <p style={{ padding: 0, margin: "0 0 5%" }}>{description}</p>
+    <p style={{ padding: 0, margin: "0 0 10%" }}>{description}</p>
   </>
 );
 export default Post;
