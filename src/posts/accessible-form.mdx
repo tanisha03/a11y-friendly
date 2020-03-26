@@ -8,9 +8,9 @@ description: "Building accessible forms to have seamless interactions between th
 
 # Accessible forms
 
-Regardless to say, forms are one of the vital source of information collected from the users. It is the connection point between the users and any website. To be able to utilise it to the best, it is imperative to not leave any loose ends and make forms accessible.
+Regardless to say, forms are one of the vital sources of information collected from the users. It is the connection point between the users and any website. To be able to utilize it to the best, it is imperative to not leave any loose ends and make forms accessible.
 
-Various fields are by default accessible and tabable however there are other points which are often ignored by developers while making these forms accessible. Let us have a look at them below:
+Various fields are by default accessible and tabbable however there are other points that are often ignored by developers while making these forms accessible. Let us have a look at them below:
 
 ## Use Semantics
 
@@ -18,14 +18,14 @@ The No.1 RULE of accessibility is the use of semantic HTML. Hence, use the tags 
 
 ## Form Inputs and Label
 
-Realizing the difference between placeholders and labels is the first step to building accessible forms. Placeholders are meant foe giving an example of the field where as Labels identify the information required to be entered into the field.
+Realizing the difference between placeholders and labels is another major step to building accessible forms. Placeholders are meant for providing an example of the field whereas Labels identify the information required to be entered into the field.
 Placeholders are not accessible because of the following reasons:
 
-1. It often has low color-contrat ratio.
-2. It dissapears when the user starts typing.
+1. It often has a low color-contrast ratio.
+2. It disappears when the user starts typing.
 3. It is not accessible to the screen reader.
 
-Hence, omitting labels is a big NO. Matching for and id values associate label with the appropriate form control. Another very important benefit of labels is that clicking on the label, automatically sets the focus on the field and this is really helpful for people with motor disabilities.
+Hence, omitting labels and replacing them with placeholders is a big <strong>NO</strong>. Matching for and id values associate labels with the appropriate form control. Another very important benefit of labels is that clicking on the label automatically sets the focus on the field which is extremely helpful for people with motor disabilities.
 
 ```HTML
  <label for="full-name">
@@ -37,7 +37,7 @@ Hence, omitting labels is a big NO. Matching for and id values associate label w
 
 The same also applies for Textareas. Labels should always be included for text areas.
 
-## Field sets and Legends
+## Fieldsets and Legends
 
 Similar fields can be grouped together using fieldsets like Title, First and Last Name. Fieldset also includes a legend tag where information about the group can be displayed as a caption. These captions are read out by the screen readers to let the user give extra information.
 
@@ -60,7 +60,7 @@ Similar fields can be grouped together using fieldsets like Title, First and Las
 
 ## Option Groups
 
-The optgroup element groups options in a select box. It requires a label attribute, the value of which is displayed as a non-selectable pseudo-heading preceding that group in the drop-down list of visual browsers.
+The `<optgroup>` element groups options in a select box. It requires a label attribute, the value of which is displayed as a non-selectable pseudo-heading preceding that group in the drop-down list of visual browsers.
 
 ```HTML
 <select name="country">
@@ -81,3 +81,5 @@ The optgroup element groups options in a select box. It requires a label attribu
     </optgroup>
 </select>
 ```
+
+It is very crucial to include all of these in your forms to make is a11y Friendly so that you can receive data from all sections of users seamlessly
