@@ -31,6 +31,12 @@ const Header = ({ siteTitle }) => (
         </li>
       </ul>
     </nav>
+    <div className="description">
+      <p>
+        "The power of web is in its universality. Access by everyone regardless
+        of disability is an essential aspect" ~ Tim Berners Lee
+      </p>
+    </div>
   </header>
 );
 

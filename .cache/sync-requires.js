@@ -10,6 +10,7 @@ exports.components = {
   "component---src-posts-accessible-form-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-form.mdx"))),
   "component---src-pages-404-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/404.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/index.js"))),
-  "component---src-pages-page-2-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/page-2.js")))
+  "component---src-pages-contact-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/contact.js"))),
+  "component---src-pages-about-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/about.js")))
 }
 

@@ -8,7 +8,7 @@ header {
   padding: 0;
   width: 100%;
   border-bottom: 0.2em solid #7c3028;
-  margin: 0 0 2em;
+  /* margin: 0 0 2em; */
   color: #7c3028;
 }
 /* .main-menu h1 { */
@@ -35,6 +35,14 @@ ul {
   color: #7c3028;
   font-weight: 600;
 }
+.description {
+  background-color: #7c3028;
+  color: #fdf6e3;
+  margin: 0 0 2em;
+  padding: 1em;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1200px) {
   .menu li {
     padding: 0 0.8em 0;
