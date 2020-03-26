@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
     <nav className="main-menu">
       <ul className="menu">
         <li className="menu-item">
-          <Link to="/blog">Blog</Link>
+          <Link to="/">Blog</Link>
         </li>
         <li className="menu-item">
           <Link to="/about">About</Link>

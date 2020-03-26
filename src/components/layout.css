@@ -45,11 +45,18 @@ summary {
 a {
   background-color: transparent;
   color: #7c3028;
+  text-decoration: none;
+  padding-bottom: 0.05em;
+  border-bottom: 0.15em solid #7c3028;
 }
 /* a:active, */
 a:hover {
   outline-width: 0;
   text-decoration: none;
+  padding-bottom: 0.15em;
+}
+h1 {
+  line-height: 1em;
 }
 footer {
   text-align: center;
