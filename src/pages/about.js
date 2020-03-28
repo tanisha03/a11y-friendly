@@ -33,7 +33,7 @@ const About = () => {
       <br />
       <h3>
         The next time you think of writing a cleaner code, make it sure to think
-        of writing an accessible code as well
+        of writing an accessible code as well.
       </h3>
     </Layout>
   );
