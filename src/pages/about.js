@@ -18,7 +18,7 @@ const About = () => {
       </p>
       <br />
       <p>
-        Accessibility is an often ignored topic when it comes to development. We
+        Accessibility is an often ignored topic when comes to development. We
         fail to realize its impact but it and how great an affect it causes to
         any business out there. It is not just limited to people with physical
         disabilities rather it also incorporates{" "}
