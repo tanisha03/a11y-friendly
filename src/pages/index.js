@@ -11,14 +11,14 @@ const IndexPage = () => {
   const posts = useStaticQuery(
     graphql`
       query {
-        allMdx {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
           nodes {
             frontmatter {
               title
-              path
               date
-              description
+              path
             }
+            excerpt
           }
         }
       }
@@ -37,7 +37,7 @@ const IndexPage = () => {
           title={p.frontmatter.title}
           path={p.frontmatter.path}
           date={p.frontmatter.date}
-          description={p.frontmatter.description}
+          description={p.excerpt}
         />
         // <pre>{JSON.stringify(p, null, 2)}</pre>
       ))}

@@ -1,0 +1,57 @@
+---
+title: "Visually hidden"
+path: "/visually-hidden"
+date: "2020-3-29"
+tags: ["accessibility", "visually-hidden", "aria", "css", "front end", "a11y"]
+description: Use visually hidden for better accessibility
+---
+
+# Visually Hidden
+
+Developers often commit this mistake for using `display: none` to hide content on the page. However, this is an extremely huge blunder when it comes to accessibility, especially for the users who navigate using screen readers.
+
+## What exactly is this problem?
+
+If some content on a page is meant for the users to be discovered or to be able to interact with, using `display: none` may hide this information completely from the <a href="https://webaccess.berkeley.edu/resources/assistive-technology">assistive technology</a> used by any user. It removes the content from the visual flow and the DOM hence making it <strong>inaccessible</strong> to the screen readers. The same applies to `visibility: hidden` except the fact that it retains the space in the DOM.
+
+Consider a scenario where you want to toggle some kind of information. In that case, using any of the options stated above may break the accessibility, making the content hidden to screen readers permanently.
+
+## What should be the correct approach?
+
+To retain accessibility, you would want an alternative that allows information to be hidden from the sighted users as well as made available to the screen readers.
+So let us have a quick look at the most suitable way of achieving the same.
+
+### Visually Hidden - Off-Screen
+
+This method pushes the content out of the viewport making it invisible to sighted users but it retains its position in the view layout making it visible to the screen readers.
+
+```css
+.off-scrren {
+  left: -100vw;
+  position: absolute;
+}
+```
+
+All the MAGIC these above lines accomplish is, it pushes the data out of the viewport width making it visually invisible yet accessible.
+
+### Visually Hidden - CSS Clip
+
+The other alternative is to shrink an element into a 1px square, hiding any overflow and removing it completely from the normal document flow.
+
+```css
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+```
+
+Here, <strong>clip pattern</strong> does that job pretty well by making it hidden visually yet accessible by screen readers.
+
+<br />
+
+Hence, writing some responsible code can make such a <strong>huge</strong> impact. These CSS techniques make the content interactive both to sighted users as well as people using screen readers without affecting the markup.
