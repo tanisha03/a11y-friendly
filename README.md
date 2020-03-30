@@ -5,4 +5,4 @@ Accessibility or a11y is Web Inclusion, it is to make the web for everyone irres
 
 ## About the Blog
 
-This blog is my attempt at advocating accessibility to every developer to inculcate this practice. I am no expert in this field rather it is just an honest attempt. I call out to every web developer enthusiast to practice this and promote accessibility.
+This blog is my attempt at advocating accessibility to every developer to inculcate this practice. I am no expert in this field rather it is just an honest attempt. I call out to every web developer enthusiast to practice this and promote accessibility. The blog just includes some posts and code snippets on topics revolving around a11y. To refer to codes of accessible UI components in pure HTML, CSS and Javascript, visit [here](https://github.com/tanisha03/a11y)
