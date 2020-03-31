@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `a11y Friendly`,
     description: `Kick off your next, accessible project with this blog`,
-    author: `@tanisha03`
+    author: `@tanishaaa03`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
