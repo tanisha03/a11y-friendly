@@ -27,11 +27,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <p>Welcome to new Gatsby site.</p> */}
-      {/* <p>Now go build something great.</p> */}
-      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
-      {/* <Image /> */}
-      {/* </div> */}
       {posts.allMdx.nodes.map(p => (
         <Post
           title={p.frontmatter.title}
@@ -39,9 +34,7 @@ const IndexPage = () => {
           date={p.frontmatter.date}
           description={p.excerpt}
         />
-        // <pre>{JSON.stringify(p, null, 2)}</pre>
       ))}
-      {/* <Link to="/page-2/">Go to page 2</Link> */}
     </Layout>
   );
 };
