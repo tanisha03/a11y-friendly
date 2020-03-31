@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
         borderBottom: "none"
       }}
     >
-      <img src={img1} alt="logo" className="logo" />
+      <img src={img1} alt="logo of a11y-friendly" className="logo" />
       {/* <span className="site-title"> {siteTitle} </span> */}
     </Link>
     <nav className="main-menu">

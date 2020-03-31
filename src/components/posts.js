@@ -6,10 +6,7 @@ const Post = ({ title, path, date, description }) => {
   d = d.substring(4);
   return (
     <>
-      <a
-        href={path}
-        style={{ fontSize: "1.4em", margin: 0, padding: 0, fontWeight: 600 }}
-      >
+      <a href={path} style={{ fontSize: "1.4em", fontWeight: 600 }}>
         {title}
       </a>
       <p style={{ marginLeft: "2%", fontWeight: 600 }}>{d}</p>
