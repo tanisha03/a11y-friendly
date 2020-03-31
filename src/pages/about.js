@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 const About = () => {
   return (
     <Layout>
+      <SEO title="About" />
       <p>
         Hey there, fellow a11y enthusiast !!! I am{" "}
         <a href="https://twitter.com/tanishaaa03">Tanisha Sabherwal</a>. It is

@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 const Contact = () => {
   return (
     <Layout>
+      <SEO title="Contact" />
       <p>
         For any quick questions, contact me on{" "}
         <a href="https://twitter.com/tanishaaa03">twitter</a>.

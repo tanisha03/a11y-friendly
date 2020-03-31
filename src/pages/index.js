@@ -26,7 +26,7 @@ const IndexPage = () => {
   );
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Blog" />
       {posts.allMdx.nodes.map(p => (
         <Post
           title={p.frontmatter.title}
