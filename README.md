@@ -28,4 +28,4 @@ The blog will be up on [localhost:8000](http://localhost:8000/) . Alternatively 
 
 ## Contributing
 
-If you wish to contribute to the blog or want to suggest some new topics around a11y, you are more than welcome to raise issues [here](https://github.com/tanisha03/a11y-friendly/issues) and I would be more than happy to resolve them. PRs are also welcome.
+If you wish to contribute to the blog or want to suggest some new topics around a11y, you are welcome to raise issues [here](https://github.com/tanisha03/a11y-friendly/issues) and I would be more than happy to resolve them. PRs are also welcome.
