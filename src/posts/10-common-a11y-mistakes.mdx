@@ -1,0 +1,75 @@
+---
+title: "Top 10 commonly made a11y mistakes"
+path: "/10-common-a11y-mistakes"
+date: "2020-4-08"
+tags:
+  [
+    "accessibility",
+    "visually-hidden",
+    "aria",
+    "css",
+    "front end",
+    "a11y",
+    "buttons",
+    "links",
+  ]
+description: Some pointers to keep in mind while developing websites to avoid broken accessibility. A list of common mistakes committed, making the content inaccessible.
+---
+
+# Top 10 commonly made a11y mistakes :
+
+While we aspire to beautify our websites to make is appealing, the accessibility of the same content is often ignored by a lot of developers. I recently gave a talk on the same during Hack Quarantine to highlight the most common mistakes which breaks accessibility.
+
+## 1. Semantic HTML
+
+Always stick to the semantics and make them your best friends. This is important for the structuring of the Accessibility Tree which is extracted from the Document Object Model(DOM). Also, structure each page using appropriate semantics like `<header>`, `<nav>`, `<main>`, `<section>` and `<footer>`.
+
+## 2. Contrast Ratio
+
+The AA standards for the WCAG says that the Contrast Ratio should be :
+
+<ol>
+  <li>3:1 for Large Text(18px & bold or 24px)</li>
+  <li>4.5:1 for Small Text</li>
+</ol>
+The same also should be followed for each states(hover, focused, disabled) of components and "images of text".
+
+## 3. Hiden vs None
+
+Understand the difference between the display:none, visibility:hidden as well as visually-hidden strategies. This is extremely important for screen reader users to provide them with appropriate information.
+
+## 4. Alt Text
+
+Never miss out on the alternative text for the images to provide the required information for visually disabled users. Make sure to make it concise, intuitive and descriptive rather than short and vague.
+
+## 5. Labels
+
+Understand the difference and avoid substituting placeholders for labels since they are inaccessible. Always resort to labels or resort to `aria-label` and `visually-hidden` to provide assistive information to the users.
+
+## 6. Buttons VS links
+
+Repeating once again, stick to the semantics and never mix the two. While Buttons are for actions or javascript triggers, links are strictly for navigation. Mixing the two would cause problems to the users with screen readers.
+
+## 7. Outline Focus
+
+NEVER remove it. This is very important for keyboard navigation. If there are some conflicts regarding the designs, look for an alternative CSS styling to compensate for the same, say for example, by changing the outline styling.
+
+## 8. Empty links
+
+Never leave link tags(i.e. without a text) empty because again it causes issues for screen readers. Other than that, avoid using ambiguous link text so that user does not lose context.
+
+## 9. Use Skip links
+
+Avoid tab-trapping the user in the navigation, especially with a lot of options, to avoid visiting all of them for every page. This gives a better user experience by giving an option to skip to the main content.
+
+## 10. Don't change the tab order
+
+Don't play around with tab index and position properties a lot since it might break the natural tab sequencing of elements. The markup should be such that it is clean and sequential to that the same general ordering is maintained for the visuals.
+
+<strong>To know more about each of these pointers:</strong>
+<br />
+<a href="https://docs.google.com/presentation/d/1L5P6UPbMvLZ6IQi8_u1C8grIscYnK_8Zdk_Qo28OzM4/edit?usp=sharing">
+  Link for the slides
+</a>
+<br />
+<a href="https://www.youtube.com/watch?v=6lavppLYfF8">Link for the video</a>

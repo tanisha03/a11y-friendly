@@ -50,7 +50,6 @@ a {
   border-bottom: 0.15em solid #7c3028;
 }
 a:active,
-a:focus,
 a:hover {
   outline-width: 0;
   text-decoration: none;

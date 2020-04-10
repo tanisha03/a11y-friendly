@@ -37,8 +37,7 @@ ul {
   color: #7c3028;
   font-weight: 600;
 }
-.menu a:hover,
-.menu a:focus {
+.menu a:hover {
   border-bottom: 0.15em solid #7c3028;
 }
 .description {

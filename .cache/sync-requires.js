@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/about.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/contact.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/index.js")))
+  "component---src-pages-index-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/index.js"))),
+  "component---src-posts-10-common-a-11-y-mistakes-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/10-common-a11y-mistakes.mdx")))
 }
 
