@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-162678200-1"},
+    },{
       plugin: require('/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{

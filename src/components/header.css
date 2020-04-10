@@ -37,6 +37,10 @@ ul {
   color: #7c3028;
   font-weight: 600;
 }
+.menu a:hover,
+.menu a:focus {
+  border-bottom: 0.15em solid #7c3028;
+}
 .description {
   background-color: #7c3028;
   color: #fdf6e3;

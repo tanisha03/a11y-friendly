@@ -1,4 +1,7 @@
 module.exports = [{
+      plugin: require('../node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
+      options: {"plugins":[],"trackingId":"UA-162678200-1"},
+    },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
       options: {"plugins":[],"name":"a11y-blog-template","short_name":"blog","start_url":"/","background_color":"#7c3028","theme_color":"#7c3028","display":"minimal-ui","icon":"src/images/logo.svg"},
     },{

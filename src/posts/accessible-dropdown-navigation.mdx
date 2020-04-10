@@ -76,7 +76,7 @@ Something similar to this.
   style="text-align:center"
 />
 
-However, we obviously won't like a navigation something like this so let us just style it up. For the submenu, I have used <a href="https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/">visually-hidden</a> rather than display:none. I have omitted some general styling, you can have a look at the entire code <a href="https://github.com/tanisha03/a11y">here</a>.
+However, we obviously won't like navigation something like this so let us just style it up. For the submenu, I have used <a href="https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/">visually-hidden</a> rather than display:none. I have omitted some general styling, you can have a look at the <a href="https://github.com/tanisha03/a11y">link for the github repository</a>.
 
 ```css
 .submenu {
@@ -109,7 +109,7 @@ The navigation bar looks something like this now. However, the next thing to not
 To solve this issue, we have <strong>:focus-within</strong> to the rescue. It is a pseudo-class that represents an element that has received focus or contains an element that has received focus. This allows us to open the submenu when a submenu element is focused.
 
 ```css
-.menu_item:hover .submenu {
+.menu_item:focus-within .submenu {
   padding: 0.5em 0;
   width: 9em;
   height: auto;
@@ -125,6 +125,18 @@ It works pretty well for the menus to be able to navigation forward and backward
   alt="styled navigation with keyboard accessibility using TAB"
   src="https://raw.githubusercontent.com/tanisha03/a11y-friendly/master/src/images/nav-3.gif?token=AI5VVFMLRWF66T2EHGBHPBS6QOR5K"
 />
+<br />
+<strong>
+  NOTE :The pseudo-class :focus-within is not really supported for IE and some
+  older browsers. Go check out the compatibility in the{" "}
+  <a href="https://caniuse.com/#search=focus-within">
+    link for browser support
+  </a>{" "}
+  . You might want to consider using a polyfill for the same. I used an
+  alternative method of using "focus" class.
+  <a href="https://github.com/tanisha03/a11y"> Link for the code is here</a>. The
+  repository has both of the mentioned approaches for reference.
+</strong>
 
 To further make it even more functional, let us write some javascript to be able to switch menus using the left and right arrow keys. To get started, add an EventListener for the same.
 
@@ -176,7 +188,7 @@ if (e.keyCode === 37) {
 }
 ```
 
-Congratulations !!! You've your accessible navigation menu ready. Refer to the entire code <a href="https://github.com/tanisha03/a11y">here</a>.
+Congratulations !!! You've your accessible navigation menu ready.
 
 <img
   class="blog-image"
