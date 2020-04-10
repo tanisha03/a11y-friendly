@@ -18,15 +18,16 @@ description: Some pointers to keep in mind while developing websites to avoid br
 
 # Top 10 commonly made a11y mistakes :
 
-While we aspire to beautify our websites to make is appealing, the accessibility of the same content is often ignored by a lot of developers. I recently gave a talk on the same during Hack Quarantine to highlight the most common mistakes which breaks accessibility.
+While we aspire to beautify our websites to make it appealing, the accessibility of the same content is often ignored by a lot of developers. I recently gave a talk on the same during <a href="https://hackquarantine.com/">Hack Quarantine</a> to highlight the most common mistakes which breaks accessibility.
+Let us quickly browse through the same.
 
 ## 1. Semantic HTML
 
-Always stick to the semantics and make them your best friends. This is important for the structuring of the Accessibility Tree which is extracted from the Document Object Model(DOM). Also, structure each page using appropriate semantics like `<header>`, `<nav>`, `<main>`, `<section>` and `<footer>`.
+Always stick to the semantics and make them your best friends. This is important for the structuring of the <a href="https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree">Accessibility Tree</a> which is extracted from the Document Object Model(DOM). Also, structure each page using appropriate semantics like `<header>`, `<nav>`, `<main>`, `<section>` and `<footer>`.
 
 ## 2. Contrast Ratio
 
-The AA standards for the WCAG says that the Contrast Ratio should be :
+The AA standards for the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> says that the Contrast Ratio should be :
 
 <ol>
   <li>3:1 for Large Text(18px & bold or 24px)</li>
@@ -56,11 +57,11 @@ NEVER remove it. This is very important for keyboard navigation. If there are so
 
 ## 8. Empty links
 
-Never leave link tags(i.e. without a text) empty because again it causes issues for screen readers. Other than that, avoid using ambiguous link text so that user does not lose context.
+Never leave link tags(i.e. without a text) empty because again it causes issues for screen readers. Other than that, avoid using ambiguous link text so that the user does not lose context.
 
 ## 9. Use Skip links
 
-Avoid tab-trapping the user in the navigation, especially with a lot of options, to avoid visiting all of them for every page. This gives a better user experience by giving an option to skip to the main content.
+Avoid tab-trapping the user in the navigation, especially with a lot of options, to avoid visiting all of them for every page by using <a href="https://webaim.org/techniques/skipnav/">Skip Navigation Links</a>. This gives a better user experience by giving an option to skip to the main content.
 
 ## 10. Don't change the tab order
 
