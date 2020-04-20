@@ -9,6 +9,7 @@ exports.components = {
   "component---src-posts-10-common-a-11-y-mistakes-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/10-common-a11y-mistakes.mdx"))),
   "component---src-posts-accessible-dropdown-navigation-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-dropdown-navigation.mdx"))),
   "component---src-posts-accessible-form-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-form.mdx"))),
+  "component---src-posts-neumorphism-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/neumorphism.mdx"))),
   "component---src-posts-visually-hidden-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/visually-hidden.mdx"))),
   "component---src-pages-404-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/pages/about.js"))),
