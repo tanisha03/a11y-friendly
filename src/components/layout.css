@@ -68,6 +68,9 @@ footer {
   bottom: 0;
   left: 0;
 }
+images{
+  width: 100%;
+}
 .blog-image {
   width: 100%;
 }
