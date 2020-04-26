@@ -16,8 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fdf6e3;
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.1em;
   color: #7c3028;
   line-height: 1.5em;
   min-height: 100%;
@@ -47,7 +46,7 @@ a {
   color: #7c3028;
   text-decoration: none;
   padding-bottom: 0em;
-  border-bottom: 0.15em solid #7c3028;
+  border-bottom: 0.1em solid #7c3028;
 }
 a:active,
 a:hover {
