@@ -4,20 +4,17 @@ header {
 .logo {
   padding: 0.2em 0 0;
 }
+
+a:hover, a:active{
+  padding:0;
+}
+
 .main-menu {
   padding: 0;
   width: 100%;
   border-bottom: 0.2em solid #7c3028;
-  /* margin: 0 0 2em; */
   color: #7c3028;
 }
-/* .main-menu h1 { */
-/* font-size: 2em; */
-/* font-weight: 500; */
-/* padding: 0; */
-/* margin: 0; */
-/* color: #7c3028; */
-/* } */
 
 ul {
   list-style: none;
@@ -39,6 +36,7 @@ ul {
 }
 .menu a:hover {
   border-bottom: 0.15em solid #7c3028;
+  padding:0;
 }
 .description {
   background-color: #7c3028;

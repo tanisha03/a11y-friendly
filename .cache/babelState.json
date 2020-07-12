@@ -3,11 +3,30 @@
     "develop": {
       "plugins": [
         {
-          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
-      "presets": [],
+      "presets": [
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -16,11 +35,30 @@
     "develop-html": {
       "plugins": [
         {
-          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
-      "presets": [],
+      "presets": [
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -29,11 +67,30 @@
     "build-html": {
       "plugins": [
         {
-          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
-      "presets": [],
+      "presets": [
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -42,11 +99,30 @@
     "build-javascript": {
       "plugins": [
         {
-          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
-      "presets": [],
+      "presets": [
+        {
+          "name": "/home/tanisha/Documents/a11y-friendly/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"

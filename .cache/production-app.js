@@ -11,13 +11,18 @@ import {
 } from "./navigation"
 import emitter from "./emitter"
 import PageRenderer from "./page-renderer"
-import asyncRequires from "./async-requires"
-import { setLoader, ProdLoader, publicLoader } from "./loader"
+import asyncRequires from "$virtual/async-requires"
+import {
+  setLoader,
+  ProdLoader,
+  publicLoader,
+  PageResourceStatus,
+} from "./loader"
 import EnsureResources from "./ensure-resources"
 import stripPrefix from "./strip-prefix"
 
 // Generated during bootstrap
-import matchPaths from "./match-paths.json"
+import matchPaths from "$virtual/match-paths.json"
 
 const loader = new ProdLoader(asyncRequires, matchPaths)
 setLoader(loader)
@@ -119,7 +124,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
   }
 
   publicLoader.loadPage(browserLoc.pathname).then(page => {
-    if (!page || page.status === `error`) {
+    if (!page || page.status === PageResourceStatus.Error) {
       throw new Error(
         `page resources for ${browserLoc.pathname} not found. Not rendering React`
       )

@@ -6,8 +6,7 @@ import img1 from "./logo.svg";
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Link
-      to="/"
+    <div
       style={{
         display: "flex",
         justifyContent: "center",
@@ -17,7 +16,7 @@ const Header = ({ siteTitle }) => (
     >
       <img src={img1} alt="logo of a11y-friendly" className="logo" />
       {/* <span className="site-title"> {siteTitle} </span> */}
-    </Link>
+    </div>
     <nav className="main-menu">
       <ul className="menu">
         <li className="menu-item">

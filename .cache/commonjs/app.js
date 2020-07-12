@@ -8,6 +8,8 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _domready = _interopRequireDefault(require("@mikaelkristiansson/domready"));
 
+var _socket = _interopRequireDefault(require("socket.io-client"));
+
 var _socketIo = _interopRequireDefault(require("./socketIo"));
 
 var _emitter = _interopRequireDefault(require("./emitter"));
@@ -18,9 +20,9 @@ var _loader = require("./loader");
 
 var _devLoader = _interopRequireDefault(require("./dev-loader"));
 
-var _syncRequires = _interopRequireDefault(require("./sync-requires"));
+var _syncRequires = _interopRequireDefault(require("$virtual/sync-requires"));
 
-var _matchPaths = _interopRequireDefault(require("./match-paths.json"));
+var _matchPaths = _interopRequireDefault(require("$virtual/match-paths.json"));
 
 // Generated during bootstrap
 window.___emitter = _emitter.default;
@@ -38,6 +40,23 @@ window.___loader = _loader.publicLoader; // Let the site/plugins run code very e
       window.location.reload();
     });
   }
+
+  fetch(`/___services`).then(res => res.json()).then(services => {
+    if (services.developstatusserver) {
+      const parentSocket = (0, _socket.default)(`http://${window.location.hostname}:${services.developstatusserver.port}`);
+      parentSocket.on(`develop:needs-restart`, msg => {
+        if (window.confirm(`The develop process needs to be restarted for the changes to ${msg.dirtyFile} to be applied.\nDo you want to restart the develop process now?`)) {
+          parentSocket.once(`develop:is-starting`, msg => {
+            window.location.reload();
+          });
+          parentSocket.once(`develop:started`, msg => {
+            window.location.reload();
+          });
+          parentSocket.emit(`develop:restart`);
+        }
+      });
+    }
+  });
   /**
    * Service Workers are persistent by nature. They stick around,
    * serving a cached version of the site if they aren't removed.
@@ -46,7 +65,6 @@ window.___loader = _loader.publicLoader; // Let the site/plugins run code very e
    *
    * Let's warn if we find service workers in development.
    */
-
 
   if (`serviceWorker` in navigator) {
     navigator.serviceWorker.getRegistrations().then(registrations => {
@@ -61,7 +79,7 @@ window.___loader = _loader.publicLoader; // Let the site/plugins run code very e
 
     let Root = preferDefault(require(`./root`));
     (0, _domready.default)(() => {
-      renderer(_react.default.createElement(Root, null), rootElement, () => {
+      renderer( /*#__PURE__*/_react.default.createElement(Root, null), rootElement, () => {
         (0, _apiRunnerBrowser.apiRunner)(`onInitialClientRender`);
       });
     });
