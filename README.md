@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37444245/92335069-0dd28700-f0b1-11ea-9130-3cb1f7898eda.png">
+</p>
+
 # a11y-friendly
 
 Accessibility or a11y is Web Inclusion, it is the practice to develop websites for everyone irrespective of any disability or impairment. In the metrics used to define the performance of the website, accessibility is often an ignored feature. However, such a practice does a lot of damage to the businesses out there because it makes the website unusable for a specific section of users. Thus before your think of writing a cleaner and modular code, do think of writing an "accessible" code.
