@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37444245/92335069-0dd28700-f0b1-11ea-9130-3cb1f7898eda.png">
+  <img src="https://user-images.githubusercontent.com/37444245/92335069-0dd28700-f0b1-11ea-9130-3cb1f7898eda.png" alt="logo">
 </p>
 
 # a11y-friendly
