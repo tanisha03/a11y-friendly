@@ -14,6 +14,7 @@ exports.components = {
   "component---src-posts-accessible-dropdown-navigation-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-dropdown-navigation.mdx"))),
   "component---src-posts-accessible-form-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-form.mdx"))),
   "component---src-posts-accessible-neumorphism-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/accessible-neumorphism.mdx"))),
+  "component---src-posts-inclusivity-in-video-conferencing-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/inclusivity-in-video-conferencing.mdx"))),
   "component---src-posts-neumorphism-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/neumorphism.mdx"))),
   "component---src-posts-visually-hidden-mdx": hot(preferDefault(require("/home/tanisha/Documents/a11y-friendly/src/posts/visually-hidden.mdx")))
 }

@@ -11,6 +11,7 @@ exports.components = {
   "component---src-posts-accessible-dropdown-navigation-mdx": () => import("./../../src/posts/accessible-dropdown-navigation.mdx" /* webpackChunkName: "component---src-posts-accessible-dropdown-navigation-mdx" */),
   "component---src-posts-accessible-form-mdx": () => import("./../../src/posts/accessible-form.mdx" /* webpackChunkName: "component---src-posts-accessible-form-mdx" */),
   "component---src-posts-accessible-neumorphism-mdx": () => import("./../../src/posts/accessible-neumorphism.mdx" /* webpackChunkName: "component---src-posts-accessible-neumorphism-mdx" */),
+  "component---src-posts-inclusivity-in-video-conferencing-mdx": () => import("./../../src/posts/inclusivity-in-video-conferencing.mdx" /* webpackChunkName: "component---src-posts-inclusivity-in-video-conferencing-mdx" */),
   "component---src-posts-neumorphism-mdx": () => import("./../../src/posts/neumorphism.mdx" /* webpackChunkName: "component---src-posts-neumorphism-mdx" */),
   "component---src-posts-visually-hidden-mdx": () => import("./../../src/posts/visually-hidden.mdx" /* webpackChunkName: "component---src-posts-visually-hidden-mdx" */)
 }
